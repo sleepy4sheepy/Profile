@@ -1,0 +1,177 @@
+body {
+    height: 2000px; /* 把畫面拉高 */
+    background-color: #000000;
+    color: #dbdbdb;
+}
+
+.container {
+    margin-top: 1000px; /* 把圖片往下放 */
+}
+
+.container .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 {
+  margin-top: 200px;
+}
+
+.container2 .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-title {
+    position: fixed;
+    top: 30vh;
+    left: 0;
+    width: 100%;
+    font-size: 180px;
+    font-weight: bold;
+    color: #3b0e0e;
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    z-index: -1; /* 小於0沉下去、大於0浮上來 */ 
+}
+
+.rotate-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* 調整容器寬度 */
+  height: 50px; /* 調整容器高度 */
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  animation: rotate 15s linear infinite reverse;
+  transform: translate(20px, 20px);
+  z-index: 1;
+}
+
+.rotate-text span {
+  position: absolute;
+  transform-origin: center center;
+  font-size: 3rem;
+}
+
+.rotate-text span:nth-child(1) {
+  transform: rotate(30deg) translate(-50%, -150px) rotate(-30deg);
+}
+
+.rotate-text span:nth-child(2) {
+  transform: rotate(60deg) translate(-50%, -150px) rotate(-60deg);
+}
+
+.rotate-text span:nth-child(3) {
+  transform: rotate(90deg) translate(-50%, -150px) rotate(-90deg);
+}
+
+.rotate-text span:nth-child(4) {
+  transform: rotate(120deg) translate(-50%, -150px) rotate(-120deg);
+}
+
+.rotate-text span:nth-child(5) {
+  transform: rotate(150deg) translate(-50%, -150px) rotate(-150deg);
+}
+
+.rotate-text span:nth-child(6) {
+  transform: rotate(180deg) translate(-50%, -150px) rotate(-180deg);
+}
+
+.rotate-text span:nth-child(7) {
+  transform: rotate(210deg) translate(-50%, -150px) rotate(-210deg);
+}
+
+.rotate-text span:nth-child(8) {
+  transform: rotate(240deg) translate(-50%, -150px) rotate(-240deg);
+}
+
+.rotate-text span:nth-child(9) {
+  transform: rotate(270deg) translate(-50%, -150px) rotate(-270deg);
+}
+
+.rotate-text span:nth-child(10) {
+  transform: rotate(300deg) translate(-50%, -150px) rotate(-300deg);
+}
+
+.rotate-text span:nth-child(11) {
+  transform: rotate(330deg) translate(-50%, -150px) rotate(-330deg);
+}
+
+.rotate-text span:nth-child(12) {
+  transform: rotate(360deg) translate(-50%, -150px) rotate(-360deg);
+}
+
+.rotate-text2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59px; /* 調整容器寬度 */
+  height: 50px; /* 調整容器高度 */
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  animation: rotate 15s linear infinite;
+  transform: translate(20px, 20px);
+  z-index: 1;
+}
+
+.rotate-text2 span {
+  position: absolute;
+  transform-origin: center center;
+  font-size: 2rem;
+}
+
+.rotate-text2 span:nth-child(1) {
+  transform: rotate(36deg) translate(-50%, -100px) rotate(-36deg);
+}
+
+.rotate-text2 span:nth-child(2) {
+  transform: rotate(72deg) translate(-50%, -100px) rotate(-72deg);
+}
+
+.rotate-text2 span:nth-child(3) {
+  transform: rotate(108deg) translate(-50%, -100px) rotate(-108deg);
+}
+
+.rotate-text2 span:nth-child(4) {
+  transform: rotate(144deg) translate(-50%, -100px) rotate(-144deg);
+}
+
+.rotate-text2 span:nth-child(5) {
+  transform: rotate(180deg) translate(-50%, -100px) rotate(-180deg);
+}
+
+.rotate-text2 span:nth-child(6) {
+  transform: rotate(216deg) translate(-50%, -100px) rotate(-216deg);
+}
+
+.rotate-text2 span:nth-child(7) {
+  transform: rotate(252deg) translate(-50%, -100px) rotate(-252deg);
+}
+
+.rotate-text2 span:nth-child(8) {
+  transform: rotate(288deg) translate(-50%, -100px) rotate(-288deg);
+}
+
+.rotate-text2 span:nth-child(9) {
+  transform: rotate(324deg) translate(-50%, -100px) rotate(-324deg);
+}
+
+.rotate-text2 span:nth-child(10) {
+  transform: rotate(360deg) translate(-50%, -100px) rotate(-360deg);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}

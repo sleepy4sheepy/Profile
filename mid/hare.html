@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hare Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        .video-controls {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-controls button {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video id="videoPlayer" autoplay controls>
+            <source src="V.mp4" type="video/mp4">
+        </video>
+        <div class="video-controls">
+            <button id="playPauseBtn">&#9658;</button>
+        </div>
+    </div>
+
+    <script>
+        const videoPlayer = document.getElementById('videoPlayer');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+
+        playPauseBtn.addEventListener('click', togglePlayPause);
+
+        function togglePlayPause() {
+            if (videoPlayer.paused || videoPlayer.ended) {
+                videoPlayer.play();
+                playPauseBtn.innerHTML = '&#10074;&#10074;'; // 顯示暫停符號
+            } else {
+                videoPlayer.pause();
+                playPauseBtn.innerHTML = '&#9658;'; // 顯示播放符號
+            }
+        }
+    </script>
+</body>
+</html>
